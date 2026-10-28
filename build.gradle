@@ -10,18 +10,6 @@ base {
     archivesName = project.archives_base_name
 }
 
-repositories {
-    maven {
-        name = "Fabric"
-        url = "https://maven.fabricmc.net/"
-    }
-    maven {
-        name = "LuckPerms"
-        url = "https://repo.lucko.me/"
-    }
-    mavenCentral()
-}
-
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings loom.officialMojangMappings()
